@@ -2,15 +2,15 @@
 
 #include <cstdlib>
 
-static int* newPtr() {
+NO_INLINE static int* newPtr() {
     return new int[1];
 }
 
-static void resetPtr(int** ptr) {
+NO_INLINE static void resetPtr(int** ptr) {
     *ptr = nullptr;
 }
 
-static void usePtr(int* ptr) {
+NO_INLINE static void usePtr(int* ptr) {
     int var = *ptr;
     var++;
     *ptr = var;

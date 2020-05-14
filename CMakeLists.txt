@@ -3,7 +3,11 @@
 cmake_minimum_required(VERSION 3.4.0)
 project("CrashSymbolication" C CXX)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -Wall")
+if (MSVC)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /std:c++14 /Zc:wchar_t-")
+else ()
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -Wall")
+endif ()
 
 file(GLOB crash_sources
         src/crash.cpp
@@ -48,4 +52,15 @@ elseif ("${CMAKE_SYSTEM_NAME}" STREQUAL "iOS")
                 INSTALL_RPATH "@executable_path/Frameworks;@loader_path/Frameworks"
                 )
 elseif (MSVC)
+        add_definitions(-DCRASH_EXPORTS=1)
+        # set DebugInformationFormat to ProgramDatabase
+        add_definitions(/Zi)
+
+        add_library(crash SHARED
+                ${crash_sources}
+                )
+
+        target_compile_options(crash PRIVATE "/wd4514")
+        # set GenerateDebugInformation to true
+        target_link_options(crash PRIVATE /DEBUG)
 endif ()

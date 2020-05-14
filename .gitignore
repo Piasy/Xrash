@@ -9,3 +9,16 @@ build
 .vscode
 
 **.xcodeproj
+
+.vs
+**.VC.db
+**.VC.VC.opendb
+Debug
+Release
+ipch
+**.iobj
+**.ipdb
+**.pdb
+**.aps
+**.exe
+**.dmp

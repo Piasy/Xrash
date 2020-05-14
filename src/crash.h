@@ -1,3 +1,5 @@
 #pragma once
 
-void testCrash();
+#include "crash_define.h"
+
+void CRASH_API testCrash();
