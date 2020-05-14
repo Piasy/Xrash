@@ -5,7 +5,7 @@
 extern "C" {
 
 JNIEXPORT void JNICALL
-Java_com_piasy_crash_MainActivity_testCrash(
+Java_com_piasy_crash_example_MainActivity_testCrash(
         JNIEnv*, jclass) {
     testCrash();
 }

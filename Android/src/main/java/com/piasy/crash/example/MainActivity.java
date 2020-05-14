@@ -1,4 +1,4 @@
-package com.piasy.crash;
+package com.piasy.crash.example;
 
 import android.app.Activity;
 import android.os.Bundle;
