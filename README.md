@@ -2,6 +2,8 @@
 
 C++ crash symbolicate for Android, iOS, Windows, etc.
 
+_Note, for iOS and Windows, CMake 3.17.2 is suggested_.
+
 ## Android
 
 Use Gradle + CMake to build C++ sources, and save the unstripped `.so` libs, which are located inside `build/intermediates/cmake/release/obj`. Check `build_android.sh` for details. Note that you can build your sources with any NDK version.
@@ -190,3 +192,5 @@ Thread 0 (crashed)
     eip = 0x76d75cab   esp = 0x0136e98c   ebp = 0x0136e9b0
     Found by: previous frame's frame pointer
 ```
+
+We can see the file name and line number now.
