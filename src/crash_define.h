@@ -10,4 +10,6 @@
     #define NO_INLINE __declspec(noinline)
 #else
     #define CRASH_API
+
+    #define NO_INLINE __attribute__ ((noinline))
 #endif

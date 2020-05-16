@@ -2,15 +2,16 @@
 
 PROJECT=CrashSymbolication
 TARGET=crash
-DIST=libs
+DIST_LIB=libs
+DIST_SYM=symbols
 CONF=Release
 
 THIN_FRAMEWORK_OS=build/iOS/${CONF}-iphoneos/${TARGET}.framework
 THIN_DSYM_OS=build/iOS/${CONF}-iphoneos/${TARGET}.framework.dSYM
 THIN_FRAMEWORK_SIM=build/iOS/${CONF}-iphonesimulator/${TARGET}.framework
 THIN_DSYM_SIM=build/iOS/${CONF}-iphonesimulator/${TARGET}.framework.dSYM
-FAT_FRAMEWORK=${DIST}/${TARGET}.framework
-FAT_DSYM=${DIST}/${TARGET}.framework.dSYM
+FAT_FRAMEWORK=${DIST_LIB}/${TARGET}.framework
+FAT_DSYM=${DIST_SYM}/${TARGET}.framework.dSYM
 
 rm -rf build/iOS ${FAT_FRAMEWORK} ${FAT_DSYM}
 mkdir -p build/iOS
