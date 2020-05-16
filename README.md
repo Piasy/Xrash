@@ -4,7 +4,7 @@ C++ crash symbolicate for Android, iOS, Windows, etc.
 
 ## Android
 
-Use Gradle + CMake to build C++ sources, and save the unstripped `.so` libs, which are located inside `build/intermediates/cmake/release/obj`. Check the `build_android.sh` for details. Note that you can build your sources with any NDK version.
+Use Gradle + CMake to build C++ sources, and save the unstripped `.so` libs, which are located inside `build/intermediates/cmake/release/obj`. Check `build_android.sh` for details. Note that you can build your sources with any NDK version.
 
 When crash happens, collect it from logcat like below:
 
@@ -88,7 +88,7 @@ testCrash()
 
 ## iOS
 
-Use CMake + `xcodebuild` to build sources, and save `dSYM`, check the `build_libs_ios.sh` for details.
+Use CMake + `xcodebuild` to build sources, and save `dSYM`, check `build_libs_ios.sh` for details.
 
 When crash happens, collect it from "View Device Logs", save it to `1.crash`, and put all `dSYM` with it in the same dir, then symbolicate with:
 
@@ -134,13 +134,13 @@ If the crash report is collected by some crash report system, e.g. Bugly, then w
 3   UIKitCore                     	0x000000018ea0a36c 0x18e60d000 + 4182892
 ```
 
-We can use `xcrun` to symbolicate each line manually, but I write a script for it.
+We can use `xcrun` to symbolicate each line manually, but I write a Python script for it.
 
 Save the stacktrace to `2.crash`, and put all `dSYM` with it in the same dir, then symbolicate with:
 
 ```bash
 # cd into the dir containing 2.crash and all .dSYM
-python3 sybolicatereport.py 2.crash arm64
+python3 symbolicatereport.py 2.crash arm64
 ```
 
 Choose the corresponding architecture of the crash, which is arm64 in this case.
@@ -156,4 +156,37 @@ The result should be:
 
 ## Windows
 
-TBD.
+Use CMake to build sources, and save `.pdb` files, check `build_libs_windows.bat` for details. Use `MiniDumpWriteDump` from `DbgHelp` to write a minudump when crash happens, check `Win32Example/Win32Example.cpp` for details.
+
+`windbg` could analyze minidump with `!analyze -v` command, but it could only get the line number of the last frame, which isn't very helpful. After some googling, I didn't find how to get line number of all frames, so I decide to switch to `minidump_stackwalk`. To use `minidump_stackwalk`, we need convert `.pdb` to `.sym`, check `build_libs_windows.bat` for details.
+
+I also create a Python script to help me calling `minidump_stackwalk` on macOS, note we can use `minidump_stackwalk` on macOS or Linux, we only need to convert `.pdb` to `.sym` on Windows.
+
+Put the `.dmp` and `.sym` in the same dir, then symbolicate with:
+
+```bash
+# cd into the dir containing .dmp and .sym
+python3 walk_stack.py <.dmp file>
+```
+
+Note that `walk_stack.py` and `minidump_stackwalk` should be put in the same dir.
+
+The result should be (only show several frames):
+
+```bash
+Thread 0 (crashed)
+ 0  crash.dll!static void usePtr(int *) [crash.cpp : 16 + 0x3]
+    eip = 0x708c1066   esp = 0x0136e910   ebp = 0x0136e910   ebx = 0x00e716a0
+    esi = 0x00c10612   edi = 0x00000111   eax = 0x00000000   ecx = 0x00000000
+    edx = 0x00000000   efl = 0x00010202
+    Found by: given as instruction pointer in context
+ 1  crash.dll!testCrash() [crash.cpp : 23 + 0x9]
+    eip = 0x708c1044   esp = 0x0136e918   ebp = 0x0136e928
+    Found by: call frame info
+ 2  Win32Example.exe + 0x1792
+    eip = 0x00e71792   esp = 0x0136e930   ebp = 0x0136e984
+    Found by: call frame info
+ 3  user32.dll + 0x45cab
+    eip = 0x76d75cab   esp = 0x0136e98c   ebp = 0x0136e9b0
+    Found by: previous frame's frame pointer
+```
