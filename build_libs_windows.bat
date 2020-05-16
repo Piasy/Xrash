@@ -9,4 +9,5 @@ cmake -S . -B build\Windows && ^
 cmake --build build\Windows --config Release --target crash && ^
 copy /Y build\Windows\Release\crash.dll libs\ && ^
 copy /Y build\Windows\Release\crash.lib libs\ && ^
-copy /Y build\Windows\Release\crash.pdb symbols\win_x86
+copy /Y build\Windows\Release\crash.pdb symbols\win_x86 && ^
+.\tools\dump_syms.exe symbols\win_x86\crash.pdb > symbols\win_x86\crash.sym

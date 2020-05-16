@@ -1,0 +1,974 @@
+MODULE windows x86 7695093D7BC048A48B2894E2210B32C01 crash.pdb
+FILE 1 C:\Users\Piasy\AppData\Local\Temp\lnk{1E71D49B-A3E9-4BED-A29D-9C794EBE7400}.tmp
+FILE 2 c:\users\piasy\src\crashsymbolicate\src\crash.cpp
+FILE 3 c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdlib.h
+FILE 4 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cstdlib
+FILE 5 c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math.h
+FILE 6 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\eh\i386\sehprolg4.asm
+FILE 7 d:\agent\_work\3\s\src\externalapis\windows\10\sdk\inc\winbase.h
+FILE 8 d:\agent\_work\3\s\src\externalapis\windows\10\sdk\inc\winerror.h
+FILE 9 d:\agent\_work\3\s\src\externalapis\unifiedcrt\inc\string.h
+FILE 10 d:\agent\_work\3\s\src\externalapis\unifiedcrt\inc\corecrt_memcpy_s.h
+FILE 11 d:\agent\_work\3\s\src\externalapis\unifiedcrt\inc\corecrt_wstring.h
+FILE 12 d:\agent\_work\3\s\src\externalapis\windows\10\sdk\inc\stralign.h
+FILE 13 d:\agent\_work\3\s\src\externalapis\windows\10\sdk\inc\processthreadsapi.h
+FILE 14 d:\agent\_work\3\s\src\externalapis\windows\10\sdk\inc\basetsd.h
+FILE 15 d:\agent\_work\3\s\src\externalapis\windows\10\sdk\inc\winnt.h
+FILE 16 d:\agent\_work\3\s\src\externalapis\unifiedcrt\inc\ctype.h
+FILE 18 d:\agent\_work\3\s\src\vctools\crt\vcruntime\inc\vcruntime_internal.h
+FILE 19 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\gs\gs_report.c
+FILE 21 d:\agent\_work\3\s\src\vctools\crt\vcruntime\inc\internal_shared.h
+FILE 24 d:\agent\_work\3\s\src\vctools\crt\vcruntime\inc\i386\xmmintrin.h
+FILE 25 d:\agent\_work\3\s\src\externalapis\windows\10\sdk\inc\evntprov.h
+FILE 30 d:\agent\_work\3\s\src\externalapis\unifiedcrt\inc\malloc.h
+FILE 33 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\gs\gs_support.c
+FILE 44 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\misc\guard_support.c
+FILE 65 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\utility\dyn_tls_init.c
+FILE 76 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\utility\ucrt_detection.c
+FILE 79 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\misc\i386\cpu_disp.c
+FILE 95 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\eh\i386\chandler4gs.c
+FILE 111 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\eh\i386\secchk.c
+FILE 125 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\defaults\argv_mode.cpp
+FILE 126 d:\agent\_work\3\s\src\externalapis\windows\10\sdk\inc\winuser.h
+FILE 127 d:\agent\_work\3\s\src\vctools\crt\vcstartup\inc\vcstartup_internal.h
+FILE 128 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\defaults\default_local_stdio_options.cpp
+FILE 133 d:\agent\_work\3\s\src\vctools\crt\vcruntime\inc\vcruntime_new.h
+FILE 134 d:\agent\_work\3\s\src\externalapis\unifiedcrt\inc\stdlib.h
+FILE 139 d:\agent\_work\3\s\src\externalapis\windows\10\sdk\inc\guiddef.h
+FILE 142 d:\agent\_work\3\s\src\externalapis\unifiedcrt\inc\math.h
+FILE 144 d:\agent\_work\3\s\src\externalapis\unifiedcrt\inc\corecrt_memory.h
+FILE 147 d:\agent\_work\3\s\src\externalapis\unifiedcrt\inc\stdio.h
+FILE 148 d:\agent\_work\3\s\src\externalapis\unifiedcrt\inc\corecrt_wstdio.h
+FILE 149 d:\agent\_work\3\s\src\externalapis\unifiedcrt\inc\corecrt_stdio_config.h
+FILE 150 d:\agent\_work\3\s\src\vctools\crt\vcruntime\inc\vcruntime_typeinfo.h
+FILE 151 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\eh\std_type_info_static.cpp
+FILE 152 d:\agent\_work\3\s\src\vctools\crt\vcruntime\inc\vcruntime_exception.h
+FILE 160 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\eh\tncleanup.cpp
+FILE 180 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\heap\delete_scalar.cpp
+FILE 204 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\heap\delete_scalar_size.cpp
+FILE 225 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\heap\new_array.cpp
+FILE 242 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp
+FILE 268 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\heap\throw_bad_alloc.cpp
+FILE 284 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\startup\dll_dllmain.cpp
+FILE 307 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\startup\dll_dllmain_stub.cpp
+FILE 350 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\utility\utility.cpp
+FILE 369 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\utility\ucrt_stubs.cpp
+FILE 372 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\utility\utility_desktop.cpp
+FILE 398 d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\rtc\initsect.cpp
+FUNC 1000 b 0 static int * newPtr()
+1000 0 5 2
+1000 a 6 2
+100a 1 7 2
+FUNC 1010 e 0 static void resetPtr(int * *)
+1010 3 9 2
+1013 9 10 2
+101c 2 11 2
+FUNC 1020 38 0 testCrash()
+1020 4 19 2
+1024 5 20 2
+1029 9 21 2
+1032 9 22 2
+103b 9 23 2
+1044 7 24 2
+104b 9 25 2
+1054 4 26 2
+FUNC 1060 a 0 static void usePtr(int *)
+1060 3 13 2
+1063 5 16 2
+1068 2 17 2
+FUNC 106a 9 0 operator new[](unsigned int)
+106a 3 27 225
+106d 1 29 225
+106e 5 28 225
+FUNC 1073 53 0 static int dllmain_crt_dispatch(struct HINSTANCE__ *, const unsigned long, void *)
+1073 3 135 284
+1076 17 136 284
+108d 5 144 284
+1092 7 141 284
+1099 5 140 284
+109e 5 145 284
+10a3 e 138 284
+10b1 10 139 284
+10c1 5 145 284
+FUNC 10c6 10a 0 static int dllmain_crt_process_attach(struct HINSTANCE__ *, void *)
+10c6 c 34 284
+10d2 c 35 284
+10de 7 89 284
+10e5 8 38 284
+10ed 5 39 284
+10f2 4 40 284
+10f6 d 42 284
+1103 a 45 284
+110d 9 47 284
+1116 5 51 284
+111b 5 54 284
+1120 5 56 284
+1125 15 58 284
+113a 9 61 284
+1143 11 64 284
+1154 a 66 284
+115e 5 67 284
+1163 c 68 284
+116f 8 73 284
+1177 7 81 284
+117e 10 82 284
+118e c 84 284
+119a 6 15732480 284
+11a0 2 84 284
+11a2 6 87 284
+11a8 3 88 284
+11ab 10 89 284
+11bb 3 68 284
+11be a 71 284
+11c8 8 43 284
+FUNC 11d0 92 0 static int dllmain_crt_process_detach(const bool)
+11d0 c 92 284
+11dc 9 95 284
+11e5 4 96 284
+11e9 6 98 284
+11ef 8 100 284
+11f7 4 101 284
+11fb 9 103 284
+1204 5 106 284
+1209 5 108 284
+120e 5 111 284
+1213 7 114 284
+121a c 115 284
+1226 15 122 284
+123b 10 126 284
+124b 5 118 284
+1250 a 119 284
+125a 8 104 284
+FUNC 1262 106 0 static int dllmain_dispatch(struct HINSTANCE__ *, const unsigned long, void *)
+1262 c 176 284
+126e f 180 284
+127d 7 182 284
+1284 4 187 284
+1288 f 189 284
+1297 12 191 284
+12a9 8 192 284
+12b1 f 195 284
+12c0 8 196 284
+12c8 f 200 284
+12d7 9 203 284
+12e0 a 205 284
+12ea a 206 284
+12f4 a 207 284
+12fe 9 210 284
+1307 f 212 284
+1316 4 213 284
+131a c 216 284
+1326 2 220 284
+1328 22 221 284
+134a 2 229 284
+134c c 232 284
+1358 10 233 284
+FUNC 1368 2b 0 static int dllmain_raw(struct HINSTANCE__ *, const unsigned long, void *)
+1368 4 162 284
+136c a 163 284
+1376 5 164 284
+137b b 166 284
+1386 6 15732480 284
+138c 3 166 284
+138f 4 167 284
+FUNC 1393 9 c _CRT_INIT
+1393 3 153 284
+1396 1 155 284
+1397 5 154 284
+FUNC 139c 23 c _DllMainCRTStartup
+139c 3 243 284
+139f 6 244 284
+13a5 5 250 284
+13aa 11 253 284
+13bb 4 254 284
+FUNC 13bf 30 0 operator new(unsigned int)
+13bf 3 32 242
+13c2 2 35 242
+13c4 d 40 242
+13d1 d 35 242
+13de 2 54 242
+13e0 a 42 242
+13ea 5 48 242
+FUNC 13ef 4d 0 static unsigned int __get_entropy()
+13ef 6 90 33
+13f5 4 92 33
+13f9 e 95 33
+1407 9 100 33
+1410 9 103 33
+1419 9 104 33
+1422 a 113 33
+142c e 124 33
+143a 2 136 33
+FUNC 143c 4b 0 __security_init_cookie
+143c 0 158 33
+143c 1a 171 33
+1456 7 184 33
+145d 4 191 33
+1461 5 193 33
+1466 2 194 33
+1468 4 196 33
+146c a 198 33
+1476 6 202 33
+147c b 205 33
+FUNC 1487 22 c DllMain
+1487 3 21 307
+148a f 33 307
+1499 9 34 307
+14a2 3 37 307
+14a5 4 38 307
+FUNC 14a9 c 0 __scrt_initialize_type_info()
+14a9 0 16 160
+14a9 b 17 160
+14b4 1 18 160
+FUNC 14b5 c 0 __scrt_uninitialize_type_info()
+14b5 0 24 160
+14b5 b 25 160
+14c0 1 26 160
+FUNC 14c1 6 0 __local_stdio_printf_options
+14c1 0 81 149
+14c1 5 83 149
+14c6 1 84 149
+FUNC 14c7 6 0 __local_stdio_scanf_options
+14c7 0 91 149
+14c7 5 93 149
+14cc 1 94 149
+FUNC 14cd 1d 0 __scrt_initialize_default_local_stdio_options
+14cd 0 17 128
+14cd e 18 128
+14db e 19 128
+14e9 1 20 128
+FUNC 14ea 14 0 __crt_fast_decode_pointer<void (**)(void)>(void (** const)(void))
+14ea 3 505 21
+14ed f 506 21
+14fc 2 512 21
+FUNC 14fe 1d 0 __crt_fast_encode_pointer<void (**)(void)>(void (** const)(void))
+14fe 3 516 21
+1501 18 517 21
+1519 2 523 21
+FUNC 151b d 0 __crt_rotate_pointer_value(unsigned int,int)
+151b 3 491 21
+151e 8 492 21
+1526 2 493 21
+FUNC 1528 d 0 __scrt_narrow_argv_policy::configure_argv()
+1528 d 400 127
+FUNC 1535 44 0 static struct _IMAGE_SECTION_HEADER * find_pe_section(unsigned char *, const unsigned int)
+1535 3 61 350
+1538 9 63 350
+1541 9 69 350
+154a 9 70 350
+1553 7 71 350
+155a f 73 350
+1569 7 71 350
+1570 3 79 350
+1573 2 80 350
+1575 4 75 350
+FUNC 1579 5 0 __scrt_narrow_environment_policy::initialize_environment()
+1579 5 421 127
+FUNC 157e 34 0 static bool is_potentially_valid_image_base(void *)
+157e 3 28 350
+1581 7 29 350
+1588 a 35 350
+1592 5 40 350
+1597 8 42 350
+159f b 48 350
+15aa 2 53 350
+15ac 2 54 350
+15ae 2 50 350
+15b0 2 54 350
+FUNC 15b2 7 0 NtCurrentTeb
+15b2 7 21441 15
+FUNC 15b9 32 0 __scrt_acquire_startup_lock
+15b9 1 139 350
+15ba 9 140 350
+15c3 6 146 350
+15c9 a 148 350
+15d3 4 150 350
+15d7 c 148 350
+15e3 3 156 350
+15e6 1 157 350
+15e7 3 152 350
+15ea 1 157 350
+FUNC 15eb 2b 0 __scrt_dllmain_after_initialize_c
+15eb 0 376 350
+15eb 9 377 350
+15f4 5 379 350
+15f9 2 381 350
+15fb 10 383 350
+160b 2 385 350
+160d 1 392 350
+160e 5 388 350
+1613 2 391 350
+1615 1 392 350
+FUNC 1616 e 0 __scrt_dllmain_before_initialize_c
+1616 0 366 350
+1616 d 367 350
+1623 1 373 350
+FUNC 1624 1f 0 __scrt_dllmain_crt_thread_attach
+1624 0 434 350
+1624 9 436 350
+162d 3 448 350
+1630 9 441 350
+1639 5 443 350
+163e 2 444 350
+1640 2 447 350
+1642 1 448 350
+FUNC 1643 d 0 __scrt_dllmain_crt_thread_detach
+1643 0 451 350
+1643 5 453 350
+1648 5 454 350
+164d 2 455 350
+164f 1 456 350
+FUNC 1650 34 0 __scrt_dllmain_exception_filter
+1650 3 350 350
+1653 f 351 350
+1662 a 359 350
+166c 6 15732480 350
+1672 3 359 350
+1675 d 362 350
+1682 2 363 350
+FUNC 1684 23 0 __scrt_dllmain_uninitialize_c
+1684 0 395 350
+1684 9 396 350
+168d b 398 350
+1698 1 407 350
+1699 d 402 350
+16a6 1 407 350
+FUNC 16a7 d 0 __scrt_dllmain_uninitialize_critical
+16a7 0 410 350
+16a7 8 429 350
+16af 5 430 350
+FUNC 16b4 39 0 __scrt_initialize_crt
+16b4 3 185 350
+16b7 6 186 350
+16bd 7 188 350
+16c4 5 191 350
+16c9 9 194 350
+16d2 4 206 350
+16d6 9 199 350
+16df 8 201 350
+16e7 2 202 350
+16e9 2 205 350
+16eb 2 206 350
+FUNC 16ed a5 0 __scrt_initialize_onexit_tables
+16ed 6 296 350
+16f3 9 297 350
+16fc 2 299 350
+16fe 3 333 350
+1701 c 302 350
+170d d 307 350
+171a f 310 350
+1729 f 315 350
+1738 4 317 350
+173c 5 325 350
+1741 4 327 350
+1745 3 325 350
+1748 5 327 350
+174d 10 325 350
+175d c 327 350
+1769 15 328 350
+177e 7 331 350
+1785 3 332 350
+1788 2 333 350
+178a 8 304 350
+FUNC 1792 94 0 __scrt_is_nonwritable_in_current_image
+1792 c 88 350
+179e 4 92 350
+17a2 2d 99 350
+17cf a 107 350
+17d9 9 108 350
+17e2 4 109 350
+17e6 6 116 350
+17ec b 121 350
+17f7 16 123 350
+180d 19 129 350
+FUNC 1826 1d 0 __scrt_release_startup_lock
+1826 3 160 350
+1829 9 161 350
+1832 6 167 350
+1838 9 172 350
+1841 2 173 350
+FUNC 1843 28 0 __scrt_uninitialize_crt
+1843 3 209 350
+1846 f 214 350
+1855 8 220 350
+185d a 221 350
+1867 4 224 350
+FUNC 186b 3b 0 _onexit
+186b 3 256 350
+186e 10 257 350
+187e 3 259 350
+1881 2 257 350
+1883 5 259 350
+1888 7 261 350
+188f b 267 350
+189a c 271 350
+FUNC 18a6 31 0 at_quick_exit
+18a6 3 281 350
+18a9 12 282 350
+18bb 5 284 350
+18c0 1 293 350
+18c1 5 286 350
+18c6 f 291 350
+18d5 2 293 350
+FUNC 18d7 15 0 atexit
+18d7 3 274 350
+18da 10 275 350
+18ea 2 278 350
+FUNC 18ec 6 0 __scrt_get_dyn_tls_init_callback
+18ec 0 19 65
+18ec 5 20 65
+18f1 1 21 65
+FUNC 18f2 11a 0 __scrt_fastfail
+18f2 a 147 372
+18fc b 150 372
+1907 5 151 372
+190c 7 158 372
+1913 18 160 372
+192b 6 166 372
+1931 6 167 372
+1937 6 168 372
+193d 6 169 372
+1943 6 170 372
+1949 6 171 372
+194f 7 172 372
+1956 7 173 372
+195d 7 174 372
+1964 7 175 372
+196b 7 176 372
+1972 7 177 372
+1979 1 178 372
+197a 6 179 372
+1980 9 183 372
+1989 13 184 372
+199c 3 185 372
+199f 13 216 372
+19b2 17 219 372
+19c9 6 221 372
+19cf 20 226 372
+19ef a 227 372
+19f9 8 231 372
+1a01 8 232 372
+1a09 3 233 372
+FUNC 1a0c 31 0 __scrt_get_show_window_mode
+1a0c 6 22 372
+1a12 10 23 372
+1a22 a 24 372
+1a2c a 26 372
+1a36 2 29 372
+1a38 3 26 372
+1a3b 2 29 372
+FUNC 1a3d 5 0 __scrt_initialize_mta
+1a3d 0 82 372
+1a3d 5 83 372
+FUNC 1a42 3 0 __scrt_initialize_winrt
+1a42 0 65 372
+1a42 2 67 372
+1a44 1 68 372
+FUNC 1a45 43 0 __scrt_is_managed_app
+1a45 0 32 372
+1a45 8 33 372
+1a4d 4 34 372
+1a51 a 37 372
+1a5b 5 41 372
+1a60 8 43 372
+1a68 b 46 372
+1a73 6 53 372
+1a79 9 58 372
+1a82 2 61 372
+1a84 1 62 372
+1a85 2 59 372
+1a87 1 62 372
+FUNC 1a88 c 0 __scrt_set_unhandled_exception_filter
+1a88 0 98 372
+1a88 b 99 372
+1a93 1 100 372
+FUNC 1a94 3 0 __scrt_stub_for_initialize_mta
+1a94 0 74 372
+1a94 2 76 372
+1a96 1 77 372
+FUNC 1a97 41 4 __scrt_unhandled_exception_filter
+1a97 3 87 372
+1a9a 5 88 372
+1a9f 2d 89 372
+1acc 2 94 372
+1ace 4 95 372
+1ad2 6 91 372
+FUNC 1ad8 8 4 _crt_debugger_hook
+1ad8 0 126 372
+1ad8 7 131 372
+1adf 1 132 372
+FUNC 1ae0 2c 0 _RTC_Initialize
+1ae0 2 38 398
+1ae2 f 41 398
+1af1 6 43 398
+1af7 2 45 398
+1af9 6 15732480 398
+1aff 2 45 398
+1b01 9 41 398
+1b0a 2 48 398
+FUNC 1b0c 2c 0 _RTC_Terminate
+1b0c 2 52 398
+1b0e f 55 398
+1b1d 6 57 398
+1b23 2 59 398
+1b25 6 15732480 398
+1b2b 2 59 398
+1b2d 9 55 398
+1b36 2 62 398
+FUNC 1b40 46 0 _SEH_prolog4
+1b40 0 70 6
+1b40 5 71 6
+1b45 7 72 6
+1b4c 4 73 6
+1b50 4 74 6
+1b54 4 75 6
+1b58 2 76 6
+1b5a 1 77 6
+1b5b 1 78 6
+1b5c 1 79 6
+1b5d 5 80 6
+1b62 3 81 6
+1b65 2 82 6
+1b67 1 83 6
+1b68 3 84 6
+1b6b 3 85 6
+1b6e 3 86 6
+1b71 7 87 6
+1b78 3 88 6
+1b7b 3 89 6
+1b7e 6 90 6
+1b84 2 91 6
+FUNC 1b86 15 0 _SEH_epilog4
+1b86 0 112 6
+1b86 3 113 6
+1b89 7 114 6
+1b90 1 115 6
+1b91 1 116 6
+1b92 1 117 6
+1b93 1 118 6
+1b94 1 119 6
+1b95 2 120 6
+1b97 1 121 6
+1b98 1 122 6
+1b99 2 123 6
+FUNC 1b9b 23 0 _except_handler4
+1b9b 3 84 95
+1b9e 1e 85 95
+1bbc 2 92 95
+FUNC 1bbe 1 0 _guard_check_icall_nop
+1bbe 0 78 44
+1bbe 1 82 44
+FUNC 1bbf a 0 ReadNoFence
+1bbf 3 7658 15
+1bc2 5 7662 15
+1bc7 2 7664 15
+FUNC 1bc9 a 0 ReadPointerNoFence
+1bc9 3 8235 15
+1bcc 5 8237 15
+1bd1 2 8238 15
+FUNC 1bd3 12 0 _guard_icall_checks_enforced
+1bd3 0 128 44
+1bd3 11 130 44
+1be4 1 131 44
+FUNC 1be5 1d 0 std::bad_alloc::bad_alloc(char const * const)
+1be5 3 126 152
+1be8 e 125 152
+1bf6 c 127 152
+FUNC 1c02 1b 0 std::bad_alloc::bad_alloc(std::bad_alloc const &)
+FUNC 1c1d 18 0 std::bad_alloc::bad_alloc()
+1c1d 0 117 152
+1c1d 4 116 152
+1c21 2 118 152
+1c23 b 116 152
+1c2e 6 117 152
+1c34 1 118 152
+FUNC 1c35 1b 0 std::bad_array_new_length::bad_array_new_length(std::bad_array_new_length const &)
+FUNC 1c50 18 0 std::bad_array_new_length::bad_array_new_length()
+1c50 0 137 152
+1c50 4 136 152
+1c54 2 138 152
+1c56 b 136 152
+1c61 6 137 152
+1c67 1 138 152
+FUNC 1c68 2c 0 std::exception::exception(std::exception const &)
+1c68 16 68 152
+1c7e f 69 152
+1c8d 7 70 152
+FUNC 1c94 1d 0 std::exception::exception(char const * const,int)
+1c94 3 62 152
+1c97 14 63 152
+1cab 6 64 152
+FUNC 1cb1 11 0 std::bad_alloc::~bad_alloc()
+FUNC 1cc2 11 0 std::bad_array_new_length::~bad_array_new_length()
+FUNC 1cd3 11 0 std::exception::~exception()
+1cd3 0 85 152
+1cd3 10 86 152
+1ce3 1 87 152
+FUNC 1ce4 2d 0 std::bad_alloc::`scalar deleting destructor'(unsigned int)
+FUNC 1d11 2d 0 std::bad_array_new_length::`scalar deleting destructor'(unsigned int)
+FUNC 1d3e 2d 0 std::exception::`scalar deleting destructor'(unsigned int)
+FUNC 1d6b 1d 0 __scrt_throw_std_bad_alloc()
+1d6b 6 34 268
+1d71 17 35 268
+FUNC 1d88 1d 0 __scrt_throw_std_bad_array_new_length()
+1d88 6 39 268
+1d8e 17 40 268
+FUNC 1da5 d 0 std::exception::what()
+1da5 0 90 152
+1da5 c 91 152
+1db1 1 92 152
+FUNC 1db2 197 0 __isa_available_init
+1db2 3 52 79
+1db5 b 53 79
+1dc0 9 54 79
+1dc9 f 56 79
+1dd8 4 67 79
+1ddc 24 73 79
+1e00 49 82 79
+1e49 34 86 79
+1e7d 11 94 79
+1e8e 6 86 79
+1e94 c 100 79
+1ea0 10 102 79
+1eb0 17 106 79
+1ec7 b 108 79
+1ed2 4 100 79
+1ed6 8 113 79
+1ede 11 116 79
+1eef e 119 79
+1efd b 125 79
+1f08 e 126 79
+1f16 17 129 79
+1f2d 5 132 79
+1f32 d 134 79
+1f3f 5 135 79
+1f44 3 140 79
+1f47 2 142 79
+FUNC 1f49 4 0 _get_startup_argv_mode
+1f49 0 14 125
+1f49 3 15 125
+1f4c 1 16 125
+FUNC 1f4d c 0 __scrt_is_ucrt_dll_in_use
+1f4d 0 22 76
+1f4d b 23 76
+1f58 1 24 76
+FUNC 1f59 11 0 __security_check_cookie
+1f59 0 53 111
+1f59 6 56 111
+1f5f 3 57 111
+1f62 2 58 111
+1f64 6 60 111
+FUNC 1f6a e 0 operator delete(void *,unsigned int)
+1f6a 3 30 204
+1f6d 9 31 204
+1f76 2 32 204
+FUNC 1f78 7 0 type_info::~type_info()
+1f78 6 17 151
+1f7e 1 18 151
+FUNC 1f7f 23 0 type_info::`scalar deleting destructor'(unsigned int)
+FUNC 1fa2 28 0 __raise_securityfailure
+1fa2 3 140 19
+1fa5 8 146 19
+1fad 9 147 19
+1fb6 12 160 19
+1fc8 2 161 19
+FUNC 1fca f9 0 __report_gsfailure
+1fca 9 217 19
+1fd3 b 218 19
+1fde 5 220 19
+1fe3 5 245 19
+1fe8 6 246 19
+1fee 6 247 19
+1ff4 6 248 19
+1ffa 6 249 19
+2000 6 250 19
+2006 7 251 19
+200d 7 252 19
+2014 7 253 19
+201b 7 254 19
+2022 7 255 19
+2029 7 256 19
+2030 1 257 19
+2031 6 258 19
+2037 3 262 19
+203a 5 263 19
+203f 3 264 19
+2042 5 265 19
+2047 3 266 19
+204a 5 267 19
+204f 6 270 19
+2055 a 273 19
+205f a 274 19
+2069 a 286 19
+2073 a 287 19
+207d a 288 19
+2087 10 289 19
+2097 10 293 19
+20a7 10 294 19
+20b7 a 298 19
+20c1 2 299 19
+FUNC 20c3 c 0 __report_rangecheckfailure
+20c3 3 555 19
+20c6 7 556 19
+20cd 2 557 19
+FUNC 20cf ce 0 __report_securityfailure
+20cf 9 462 19
+20d8 b 463 19
+20e3 5 465 19
+20e8 5 492 19
+20ed 6 493 19
+20f3 6 494 19
+20f9 6 495 19
+20ff 6 496 19
+2105 6 497 19
+210b 7 498 19
+2112 7 499 19
+2119 7 500 19
+2120 7 501 19
+2127 7 502 19
+212e 7 503 19
+2135 1 504 19
+2136 6 505 19
+213c 3 509 19
+213f 5 510 19
+2144 3 511 19
+2147 5 512 19
+214c 3 513 19
+214f 5 514 19
+2154 6 517 19
+215a a 520 19
+2164 a 531 19
+216e a 532 19
+2178 a 534 19
+2182 f 535 19
+2191 a 542 19
+219b 2 543 19
+FUNC 219d 114 0 __report_securityfailureEx
+219d 9 338 19
+21a6 b 339 19
+21b1 5 341 19
+21b6 5 368 19
+21bb 6 369 19
+21c1 6 370 19
+21c7 6 371 19
+21cd 6 372 19
+21d3 6 373 19
+21d9 7 374 19
+21e0 7 375 19
+21e7 7 376 19
+21ee 7 377 19
+21f5 7 378 19
+21fc 7 379 19
+2203 1 380 19
+2204 6 381 19
+220a 3 385 19
+220d 5 386 19
+2212 3 387 19
+2215 5 388 19
+221a 3 389 19
+221d 5 390 19
+2222 6 393 19
+2228 a 396 19
+2232 a 407 19
+223c a 408 19
+2246 c 410 19
+2252 4 412 19
+2256 6 415 19
+225c 7 417 19
+2263 9 420 19
+226c f 421 19
+227b 15 423 19
+2290 13 425 19
+22a3 2 426 19
+22a5 a 430 19
+22af 2 431 19
+FUNC 22b1 5 0 operator delete(void *)
+22b1 0 32 180
+22b1 5 36 180
+PUBLIC 22b6 0 __std_type_info_destroy_list
+PUBLIC 22bc 0 memset
+PUBLIC 22c2 0 _except_handler4_common
+PUBLIC 22c8 0 __std_exception_copy
+PUBLIC 22ce 0 __std_exception_destroy
+PUBLIC 22d4 8 _CxxThrowException
+PUBLIC 22da 0 _initterm
+PUBLIC 22e0 0 _initterm_e
+PUBLIC 22e6 0 _callnewh
+PUBLIC 22ec 0 malloc
+PUBLIC 22f2 0 _seh_filter_dll
+PUBLIC 22f8 0 _configure_narrow_argv
+PUBLIC 22fe 0 _initialize_narrow_environment
+PUBLIC 2304 0 _initialize_onexit_table
+PUBLIC 230a 0 _register_onexit_function
+PUBLIC 2310 0 _execute_onexit_table
+PUBLIC 2316 0 _crt_atexit
+PUBLIC 231c 0 _crt_at_quick_exit
+PUBLIC 2322 0 _cexit
+PUBLIC 2328 0 terminate
+PUBLIC 232e 0 free
+PUBLIC 2334 4 QueryPerformanceCounter
+PUBLIC 233a 0 GetCurrentProcessId
+PUBLIC 2340 0 GetCurrentThreadId
+PUBLIC 2346 4 GetSystemTimeAsFileTime
+PUBLIC 234c 4 DisableThreadLibraryCalls
+PUBLIC 2352 4 InitializeSListHead
+PUBLIC 2358 0 IsDebuggerPresent
+PUBLIC 235e 4 UnhandledExceptionFilter
+PUBLIC 2364 4 SetUnhandledExceptionFilter
+PUBLIC 236a 4 GetStartupInfoW
+PUBLIC 2370 4 IsProcessorFeaturePresent
+PUBLIC 2376 4 GetModuleHandleW
+PUBLIC 237c 0 GetCurrentProcess
+PUBLIC 2382 8 TerminateProcess
+FUNC 2388 3 0 __scrt_stub_for_acrt_initialize
+2388 0 18 369
+2388 2 19 369
+238a 1 20 369
+FUNC 238b 3 0 __scrt_stub_for_acrt_thread_attach
+238b 0 33 369
+238b 2 34 369
+238d 1 35 369
+FUNC 238e 3 0 __scrt_stub_for_acrt_thread_detach
+238e 0 38 369
+238e 2 39 369
+2390 1 40 369
+FUNC 2391 3 4 __scrt_stub_for_acrt_uninitialize
+2391 0 23 369
+2391 2 24 369
+2393 1 25 369
+FUNC 2394 3 4 __scrt_stub_for_acrt_uninitialize_critical
+2394 0 28 369
+2394 2 29 369
+2396 1 30 369
+FUNC 2397 3 0 __scrt_stub_for_is_c_termination_complete
+2397 0 43 369
+2397 2 44 369
+2399 1 45 369
+STACK WIN 4 1000 b 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1010 e 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1020 38 4 0 0 0 4 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1060 a 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 106a 9 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1073 53 3 0 c 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 10c6 10a c 0 8 10 20 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $20 $T0 36 - ^ =  $23 $T0 40 - ^ =  $24 $T0 44 - ^ = 
+STACK WIN 4 11bb c 0 0 8 10 20 0 1 $T0 $ebp = $T2 $esp = $T1 .raSearchStart = $eip $T1 ^ = $ebp $T0 = $esp $T1 4 + = 
+STACK WIN 4 11d0 92 c 0 4 10 1c 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $20 $T0 32 - ^ =  $23 $T0 36 - ^ =  $24 $T0 40 - ^ = 
+STACK WIN 4 124b e 0 0 4 10 1c 0 1 $T0 $ebp = $T2 $esp = $T1 .raSearchStart = $eip $T1 ^ = $ebp $T0 = $esp $T1 4 + = 
+STACK WIN 4 1262 106 c 0 c 10 1c 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $20 $T0 32 - ^ =  $23 $T0 36 - ^ =  $24 $T0 40 - ^ = 
+STACK WIN 4 1328 1f 0 0 c 10 1c 0 1 $T0 $ebp = $T2 $esp = $T1 .raSearchStart = $eip $T1 ^ = $ebp $T0 = $esp $T1 4 + = 
+STACK WIN 4 1368 2b 4 0 c 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 136c 23 0 0 c 4 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $23 $T0 4 - ^ = 
+STACK WIN 4 1393 9 3 0 c 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 139c 23 3 0 c 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 13bf 30 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 13ef 4d 6 0 0 0 14 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 143c 4b 8 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1443 43 1 0 0 4 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + =  $23 $T0 4 - ^ = 
+STACK WIN 4 1444 3b 0 0 0 8 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + =  $23 $T0 4 - ^ =  $24 $T0 8 - ^ = 
+STACK WIN 4 1487 22 3 0 c 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 14a9 c 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 14b5 c 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 14c1 6 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 14c7 6 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 14cd 1d 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 14ea 14 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 14fe 1d 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 151b d 3 0 8 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1528 d 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1535 44 7 0 8 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 153c 37 0 0 8 4 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $23 $T0 4 - ^ = 
+STACK WIN 4 1579 5 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 157e 34 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 15b2 7 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 15b9 32 1 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 15ba 30 0 0 0 4 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + =  $23 $T0 4 - ^ = 
+STACK WIN 4 15eb 2b 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1616 e 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1624 1f 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1643 d 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1650 34 3 0 18 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1684 23 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 16a7 d 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 16b4 39 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 16ed a5 6 0 4 0 c 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1701 87 0 0 4 4 c 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $23 $T0 16 - ^ = 
+STACK WIN 4 1745 39 0 0 4 8 c 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $23 $T0 16 - ^ =  $24 $T0 20 - ^ = 
+STACK WIN 4 1792 94 c 0 4 10 18 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $20 $T0 28 - ^ =  $23 $T0 32 - ^ =  $24 $T0 36 - ^ = 
+STACK WIN 4 17f7 13 0 0 4 10 18 0 1 $T0 $ebp = $T2 $esp = $T1 .raSearchStart = $eip $T1 ^ = $ebp $T0 = $esp $T1 4 + = 
+STACK WIN 4 1826 1d 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1843 28 3 0 8 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 186b 3b 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 18a6 31 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 18d7 15 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 18ec 6 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 18f2 11a a 0 4 4 324 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $20 $T0 808 - ^ = 
+STACK WIN 4 1a0c 31 6 0 0 0 44 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1a3d 5 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1a42 3 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1a45 43 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1a88 c 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1a94 3 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1a97 41 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1ad8 8 0 0 4 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1ae0 2c 2 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1ae1 2a 1 0 0 4 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + =  $20 $T0 4 - ^ = 
+STACK WIN 4 1ae2 28 0 0 0 8 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + =  $20 $T0 4 - ^ =  $23 $T0 8 - ^ = 
+STACK WIN 4 1af1 18 0 0 0 c 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + =  $20 $T0 4 - ^ =  $23 $T0 8 - ^ =  $24 $T0 12 - ^ = 
+STACK WIN 4 1b0c 2c 2 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1b0d 2a 1 0 0 4 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + =  $20 $T0 4 - ^ = 
+STACK WIN 4 1b0e 28 0 0 0 8 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + =  $20 $T0 4 - ^ =  $23 $T0 8 - ^ = 
+STACK WIN 4 1b1d 18 0 0 0 c 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + =  $20 $T0 4 - ^ =  $23 $T0 8 - ^ =  $24 $T0 12 - ^ = 
+STACK WIN 4 1b9b 23 3 0 10 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1bbe 1 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1bbf a 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1bc9 a 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1bd3 12 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1be5 1d 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1c02 1b 9 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1c06 13 5 0 4 4 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $23 $T0 4 - ^ = 
+STACK WIN 4 1c1d 18 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1c35 1b 9 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1c39 13 5 0 4 4 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $23 $T0 4 - ^ = 
+STACK WIN 4 1c50 18 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1c68 2c 6 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1c6c 24 2 0 4 4 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $23 $T0 4 - ^ = 
+STACK WIN 4 1c94 1d 3 0 8 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1cb1 11 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1cc2 11 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1cd3 11 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1ce4 2d 6 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1ce8 25 2 0 4 4 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $23 $T0 4 - ^ = 
+STACK WIN 4 1d11 2d 6 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1d15 25 2 0 4 4 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $23 $T0 4 - ^ = 
+STACK WIN 4 1d3e 2d 6 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1d42 25 2 0 4 4 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $23 $T0 4 - ^ = 
+STACK WIN 4 1d6b 1d 6 0 0 0 c 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1d88 1d 6 0 0 0 c 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1da5 d 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1db2 197 e 0 0 0 24 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1dc0 187 0 0 0 4 24 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $20 $T0 40 - ^ = 
+STACK WIN 4 1de8 ef 0 0 0 8 24 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $20 $T0 40 - ^ =  $23 $T0 44 - ^ = 
+STACK WIN 4 1de9 ed 0 0 0 c 24 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $20 $T0 40 - ^ =  $23 $T0 44 - ^ =  $24 $T0 48 - ^ = 
+STACK WIN 4 1f49 4 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1f4d c 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1f59 11 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1f6a e 3 0 8 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1f78 7 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 1f7f 23 a 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1f87 17 2 0 4 4 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =  $23 $T0 4 - ^ = 
+STACK WIN 4 1fa2 28 3 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 1fca f9 9 0 0 0 324 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 20c3 c 3 0 0 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 20cf ce 9 0 4 0 31c 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 219d 114 9 0 c 0 320 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 22b1 5 0 0 4 0 0 0 1 $T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + = 
+STACK WIN 4 2388 3 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 238b 3 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 238e 3 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 2391 3 0 0 4 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 2394 3 0 0 4 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 4 2397 3 0 0 0 0 0 0 1 $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + = 
+STACK WIN 0 11bb d 0 0 0 0 0 0 0 0
+STACK WIN 0 124b f 0 0 0 0 0 0 0 0
+STACK WIN 0 1328 1f 0 0 0 0 0 0 0 0
+STACK WIN 0 17f7 13 0 0 0 0 0 0 0 0

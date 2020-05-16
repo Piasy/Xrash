@@ -16,9 +16,9 @@ build
 Debug
 Release
 ipch
-**.iobj
-**.ipdb
-**.pdb
 **.aps
-**.exe
-**.dmp
+libs/*.iobj
+libs/*.ipdb
+libs/*.pdb
+libs/*.exe
+libs/*.dmp
