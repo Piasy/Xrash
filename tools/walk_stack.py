@@ -12,7 +12,7 @@ minidump_stackwalk = os.path.dirname(os.path.realpath(__file__)) + "/minidump_st
 
 for sym in syms:
     with open(sym, "r") as f:
-        info = f.readline()[:-1].split(" ")
+        info = f.readline()[:-1].split()
     if len(info) == 5:
         dir = "sym/%s/%s/" % (info[-1], info[-2])
         subprocess.run("mkdir -p %s" % dir, shell=True, check=True)

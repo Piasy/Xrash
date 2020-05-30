@@ -16,7 +16,7 @@ with open(sys.argv[1], "r") as f:
 dSYMs = {f[:-15]: f for f in os.listdir(os.getcwd()) if f.endswith(".framework.dSYM")}
 
 for line in stack:
-    parts = [part.strip() for part in line.split(" ") if not (part.isspace() or part == "")]
+    parts = [part for part in line.split()]
     if (parts[3].startswith("0x")) and parts[1] in dSYMs:
         res = subprocess.run(XCRUN % (dSYMs[parts[1]], parts[1], arch, parts[3], parts[2]),
             shell=True, check=True, capture_output=True)
