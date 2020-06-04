@@ -23,5 +23,5 @@ libs/*.pdb
 libs/*.exe
 libs/*.dmp
 
-LinuxExample/*.dmp
-LinuxExample/CrashExample
+Linux/*.dmp
+Linux/CrashExample

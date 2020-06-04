@@ -59,7 +59,7 @@ elseif ("${CMAKE_SYSTEM_NAME}" STREQUAL "Linux")
         include_directories(src)
         include_directories(breakpad/include)
         add_executable(CrashExample 
-                LinuxExample/CrashExample.cpp
+                Linux/CrashExample.cpp
                 )
         file(GLOB CrashExample_deps
                 breakpad/linux_x64/libbreakpad_client.a

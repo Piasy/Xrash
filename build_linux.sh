@@ -10,5 +10,5 @@ make && \
     ../../symbols/linux_x64/libcrash.so.sym && \
 strip -s libcrash.so && \
 cp libcrash.so ../../libs && \
-cp CrashExample ../../LinuxExample && \
+cp CrashExample ../../Linux && \
 cd ../../
