@@ -1,0 +1,56 @@
+MODULE Linux x86_64 934CA86D74286871538ADBE4333F2E230 libcrash.so
+INFO CODE_ID 6DA84C9328747168538ADBE4333F2E236A792D73
+FILE 0 /root/src/CrashSymbolicate/src/crash.cpp
+FUNC 6ca 10 0 newPtr
+6ca 4 5 0
+6ce a 6 0
+6d8 2 7 0
+FUNC 6da 16 0 resetPtr
+6da 8 9 0
+6e2 b 10 0
+6ed 3 11 0
+FUNC 6f0 21 0 usePtr
+6f0 8 13 0
+6f8 9 14 0
+701 4 15 0
+705 9 16 0
+70e 3 17 0
+FUNC 711 71 0 testCrash()
+711 8 19 0
+719 f 19 0
+728 9 20 0
+731 c 21 0
+73d c 22 0
+749 c 23 0
+755 a 24 0
+75f c 25 0
+76b 17 26 0
+PUBLIC 590 0 _init
+PUBLIC 5f0 0 deregister_tm_clones
+PUBLIC 630 0 register_tm_clones
+PUBLIC 680 0 __do_global_dtors_aux
+PUBLIC 6c0 0 frame_dummy
+PUBLIC 6ca 0 newPtr()
+PUBLIC 6da 0 resetPtr(int**)
+PUBLIC 6f0 0 usePtr(int*)
+PUBLIC 711 0 testCrash()
+PUBLIC 784 0 _fini
+STACK CFI INIT 5b0 30 .cfa: $rsp 16 + .ra: .cfa -8 + ^
+STACK CFI 5b6 .cfa: $rsp 24 +
+STACK CFI INIT 5e0 8 .cfa: $rsp 8 + .ra: .cfa -8 + ^
+STACK CFI INIT 6ca 10 .cfa: $rsp 8 + .ra: .cfa -8 + ^
+STACK CFI 6cb $rbp: .cfa -16 + ^ .cfa: $rsp 16 +
+STACK CFI 6ce .cfa: $rbp 16 +
+STACK CFI 6d9 .cfa: $rsp 8 +
+STACK CFI INIT 6da 16 .cfa: $rsp 8 + .ra: .cfa -8 + ^
+STACK CFI 6db $rbp: .cfa -16 + ^ .cfa: $rsp 16 +
+STACK CFI 6de .cfa: $rbp 16 +
+STACK CFI 6ef .cfa: $rsp 8 +
+STACK CFI INIT 6f0 21 .cfa: $rsp 8 + .ra: .cfa -8 + ^
+STACK CFI 6f1 $rbp: .cfa -16 + ^ .cfa: $rsp 16 +
+STACK CFI 6f4 .cfa: $rbp 16 +
+STACK CFI 710 .cfa: $rsp 8 +
+STACK CFI INIT 711 71 .cfa: $rsp 8 + .ra: .cfa -8 + ^
+STACK CFI 712 $rbp: .cfa -16 + ^ .cfa: $rsp 16 +
+STACK CFI 715 .cfa: $rbp 16 +
+STACK CFI 781 .cfa: $rsp 8 +

@@ -1,6 +1,8 @@
-# Crash Symbolicate
+# Xrash
 
-C++ crash symbolicate for Android, iOS, Windows, etc.
+Xrash is a cross-platform CMake based C++ project, and also illustrate crash symbolicate within C++ sources.
+
+Xrash supports Android, iOS, Windows, and Linux now.
 
 _Note, for iOS and Windows, CMake 3.17.2 is suggested_.
 
@@ -158,9 +160,9 @@ The result should be:
 
 ## Windows
 
-Use CMake to build sources, and save `.pdb` files, check `build_libs_windows.bat` for details. Use `MiniDumpWriteDump` from `DbgHelp` to write a minudump when crash happens, check `Win32Example/Win32Example.cpp` for details.
+Use CMake to build sources, ~~and save `.pdb` file~~, check `build_lib_windows.bat` for details. Use `MiniDumpWriteDump` from `DbgHelp` to write a minudump when crash happens, check `Win32Example/Win32Example.cpp` for details.
 
-`windbg` could analyze minidump with `!analyze -v` command, but it could only get the line number of the last frame, which isn't very helpful. After some googling, I didn't find how to get line number of all frames, so I decide to switch to `minidump_stackwalk`. To use `minidump_stackwalk`, we need convert `.pdb` to `.sym`, check `build_libs_windows.bat` for details.
+`windbg` could analyze minidump with `!analyze -v` command, but it could only get the line number of the last frame, which isn't very helpful. After some googling, I didn't find how to get line number of all frames, so I decide to switch to `minidump_stackwalk`. To use `minidump_stackwalk`, we need convert `.pdb` to `.sym`, and save `.sym` file, check `build_lib_windows.bat` for details.
 
 I also create a Python script to help me calling `minidump_stackwalk` on macOS, note we can use `minidump_stackwalk` on macOS or Linux, we only need to convert `.pdb` to `.sym` on Windows.
 
@@ -169,6 +171,8 @@ Put the `.dmp` and `.sym` in the same dir, then symbolicate with:
 ```bash
 # cd into the dir containing .dmp and .sym
 python3 walk_stack.py <.dmp file>
+# if the output is too long, we can redirect all the output into files with
+# > 1.crash 2>&1
 ```
 
 Note that `walk_stack.py` and `minidump_stackwalk` should be put in the same dir.
@@ -193,4 +197,56 @@ Thread 0 (crashed)
     Found by: previous frame's frame pointer
 ```
 
-We can see the file name and line number now.
+We can see the file name and line number now, we can ignore the `+ 0x` after the line number.
+
+## Linux
+
+Use CMake and make to build sources, add `-g` option in `CMakeLists.txt`, dump symbols using `dump_syms` from [breakpad](https://chromium.googlesource.com/breakpad/breakpad/), and save `.sym` file, check `build_lib_linux.sh` for details.
+
+Use `google_breakpad::ExceptionHandler` to catch crash and write minidump, check `LinuxExample/CrashExample.cpp` for details.
+
+When crash happens, we can symbolicate it in the same way as Windows.
+
+Put the `.dmp` and `.sym` in the same dir, then symbolicate with:
+
+```bash
+# cd into the dir containing .dmp and .sym
+python3 walk_stack.py <.dmp file>
+# if the output is too long, we can redirect all the output into files with
+# > 1.crash 2>&1
+```
+
+The result should be (only show several frames):
+
+```bash
+Thread 0 (crashed)
+ 0  libcrash.so!usePtr [crash.cpp : 14 + 0x4]
+    rax = 0x0000000000000000   rdx = 0x0000000000000001
+    rcx = 0x00005592e78a1100   rbx = 0x0000000000000000
+    rsi = 0x0000000000000000   rdi = 0x0000000000000000
+    rbp = 0x00007ffd1c4c91b0   rsp = 0x00007ffd1c4c91b0
+     r8 = 0x0000000000000000    r9 = 0x0000000000000000
+    r10 = 0x00005592e788b010   r11 = 0x0000000000000000
+    r12 = 0x00005592e66d5360   r13 = 0x00007ffd1c4c9460
+    r14 = 0x0000000000000000   r15 = 0x0000000000000000
+    rip = 0x00007f8d674c56fc
+    Found by: given as instruction pointer in context
+ 1  libcrash.so!testCrash() [crash.cpp : 23 + 0xc]
+    rbx = 0x0000000000000000   rbp = 0x00007ffd1c4c91d0
+    rsp = 0x00007ffd1c4c91c0   r12 = 0x00005592e66d5360
+    r13 = 0x00007ffd1c4c9460   r14 = 0x0000000000000000
+    r15 = 0x0000000000000000   rip = 0x00007f8d674c5755
+    Found by: call frame info
+ 2  CrashExample + 0x2560
+    rbx = 0x0000000000000000   rbp = 0x00007ffd1c4c9380
+    rsp = 0x00007ffd1c4c91e0   r12 = 0x00005592e66d5360
+    r13 = 0x00007ffd1c4c9460   r14 = 0x0000000000000000
+    r15 = 0x0000000000000000   rip = 0x00005592e66d5560
+    Found by: call frame info
+ 3  CrashExample + 0x246a
+    rbp = 0x00007ffd1c4c9380   rsp = 0x00007ffd1c4c9290
+    rip = 0x00005592e66d546a
+    Found by: stack scanning
+```
+
+We can see the file name and line number now, we can ignore the `+ 0x` after the line number.

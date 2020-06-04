@@ -6,7 +6,7 @@ project("CrashSymbolication" C CXX)
 if (MSVC)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /std:c++14 /Zc:wchar_t-")
 else ()
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -Wall")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -Wall -g")
 endif ()
 
 file(GLOB crash_sources
@@ -50,6 +50,24 @@ elseif ("${CMAKE_SYSTEM_NAME}" STREQUAL "iOS")
                 XCODE_ATTRIBUTE_GCC_GENERATE_DEBUGGING_SYMBOLS "YES"
                 XCODE_ATTRIBUTE_DYLIB_INSTALL_NAME_BASE "@rpath"
                 INSTALL_RPATH "@executable_path/Frameworks;@loader_path/Frameworks"
+                )
+elseif ("${CMAKE_SYSTEM_NAME}" STREQUAL "Linux")
+        add_library(crash SHARED
+                ${crash_sources}
+                )
+
+        include_directories(src)
+        include_directories(breakpad/include)
+        add_executable(CrashExample 
+                LinuxExample/CrashExample.cpp
+                )
+        file(GLOB CrashExample_deps
+                breakpad/linux_x64/libbreakpad_client.a
+                )
+        target_link_libraries(CrashExample PUBLIC
+                crash
+                ${CrashExample_deps}
+                pthread
                 )
 elseif (MSVC)
         add_definitions(-DCRASH_EXPORTS=1)
