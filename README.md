@@ -1,6 +1,6 @@
 # Xrash
 
-Xrash is a cross-platform CMake based C++ project, and also illustrate crash symbolicate within C++ sources.
+Xrash is a CMake based cross-platform project for C++ sources, and also illustrate crash symbolicate within them.
 
 Xrash supports Android, iOS, Windows, and Linux now.
 
