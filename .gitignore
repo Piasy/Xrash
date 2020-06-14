@@ -25,3 +25,6 @@ libs/*.dmp
 
 Linux/*.dmp
 Linux/CrashExample
+
+iOS/Pods
+**.xcworkspace
