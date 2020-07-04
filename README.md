@@ -127,7 +127,7 @@ Thread 0 Crashed:
 
 We can see the file name and line number now.
 
-**NOTE**: the symbolicate result is not correct, the first frame should be line 14, the second frame should be line 23, I need to investigate it further.
+**NOTE**: the symbolicate result is not correct, the first frame should be line 14, the second frame should be line 23, [read more at here](iOS-symbolicate-wrong-line.md).
 
 If the crash report is collected by some crash report system, e.g. Bugly, then we can get stacktrace like this:
 
