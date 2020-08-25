@@ -10,6 +10,8 @@ _Note, for iOS and Windows, CMake 3.17.2 is suggested_.
 
 Use Gradle + CMake to build C++ sources, and save the unstripped `.so` libs, which are located inside `build/intermediates/cmake/release/obj`. Check `build_android.sh` for details. Note that you can build your sources with any NDK version.
 
+### logcat
+
 When crash happens, collect it from logcat like below:
 
 ```bash
@@ -59,6 +61,8 @@ testCrash()
 
 We can see the file name and line number now.
 
+### crash report
+
 If the crash report is collected by some crash report system, e.g. Bugly, then we can get stacktrace like this:
 
 ```bash
@@ -93,6 +97,8 @@ testCrash()
 ## iOS
 
 Use CMake + `xcodebuild` to build sources, and save `dSYM`, check `build_libs_ios.sh` for details.
+
+### device logs
 
 When crash happens, collect it from "View Device Logs", save it to `1.crash`, and put all `dSYM` with it in the same dir, then symbolicate with:
 
@@ -129,6 +135,8 @@ We can see the file name and line number now.
 
 **NOTE**: the symbolicate result is not correct, the first frame should be line 14, the second frame should be line 23, [read more at here](iOS-symbolicate-wrong-line.md).
 
+### crash report
+
 If the crash report is collected by some crash report system, e.g. Bugly, then we can get stacktrace like this:
 
 ```bash
@@ -156,6 +164,38 @@ The result should be:
 1 crash 0x0000000100357f30 testCrash() (in crash) (crash.cpp:24)
 2 CrashExample 0x000000010033e4b0 0x100338000 + 25776
 3 UIKitCore 0x000000018ea0a36c 0x18e60d000 + 4182892
+```
+
+### Xcode bt
+
+When we connect the device to computer and run app from Xcode, we can use `bt` command in lldb console, which looks like below (only show several frames):
+
+```bash
+* thread #50, queue = 'avencoder.capture', stop reason = breakpoint 1.1
+    frame #0: 0x00000001865abbb0 libsystem_malloc.dylib`malloc_error_break
+    frame #1: 0x00000001865b7b20 libsystem_malloc.dylib`malloc_vreport + 432
+    ...
+    frame #29: 0x000000018810b278 CoreImage`-[CIContext render:toCVPixelBuffer:] + 112
+    frame #30: 0x00000001037b7ef4 AwesomeFramework
+    ...
+```
+
+It only contains address offset, we need to get base address using `image list` command in lldb console, which looks like below (only show several entries):
+
+```bash
+[  0] 6ECB0D69-5B54-32AA-93F8-2C72BF3A1A64 0x0000000102690000 /Users/user/Library/Developer/Xcode/DerivedData/AwesomeApp-glbfdxeftnvbsyfeehomifxmhlcb/Build/Products/Debug-iphoneos/AwesomeApp.app/AwesomeApp 
+...
+[ 11] DFCB6ED9-5F0B-3F45-AE74-76F4A1E3F480 0x0000000103778000 /Users/user/Library/Developer/Xcode/DerivedData/AwesomeApp-glbfdxeftnvbsyfeehomifxmhlcb/Build/Products/Debug-iphoneos/AwesomeApp.app/Frameworks/AwesomeFramework.framework/AwesomeFramework 
+...
+```
+
+We can see the base address of a framework, e.g. `0x0000000103778000` for `AwesomeFramework.framework`.
+
+Then save the output of `bt` and `image list` to `bt.txt` and `image_list.txt`, and put all `dSYM` with it in the same dir, then symbolicate with:
+
+```bash
+# cd into the dir containing bt.txt, image_list.txt and all .dSYM
+python3 symbolicatexcode.py bt.txt image_list.txt arm64
 ```
 
 ## Windows
