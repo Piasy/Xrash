@@ -81,6 +81,8 @@ pid: 0, tid: 0
 3 #02 pc 00000000000040b0  /data/app/com.piasy.crash.example-na2ugYuDMIIBetyZjBi90A==/oat/arm64/base.odex (offset 0x4000)
 ```
 
+**Please note that there must be at least one space before the stack frame, e.g. `#00`, otherwise, it won't output anything.**
+
 Then it could be symbolicated with the same command we used earlier, the result should be:
 
 ```bash
